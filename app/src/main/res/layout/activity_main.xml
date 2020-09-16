@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingRight="16dp"
+    android:paddingTop="16dp"
+    android:paddingLeft="16dp"
+    android:paddingBottom="16dp"
+    tools:context=".MainActivity">
+
+
+    <EditText
+        android:id="@+id/etNombreCompleto"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/nombrecompleto"
+        android:textStyle="bold"
+        android:textSize="@dimen/nombre_contacto"
+        android:textColor="@android:color/black"/>
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_gravity="center_horizontal"
+            android:background="@drawable/border">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_gravity="center_horizontal"
+            android:background="@drawable/border"
+            android:paddingLeft="8dp">
+
+            <TextView
+                android:id="@+id/tvSetDate"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/setDate"
+                android:textSize="@dimen/set_date"
+                android:textStyle="bold"/>
+
+            <TextView
+                android:id="@+id/tvFechaNacimiento"
+                android:hint="@string/fechanacimiento"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="date"
+                android:focusable="false"
+                android:maxLines="1"
+                android:textStyle="bold"
+                android:paddingLeft="40dp"
+                android:paddingRight="8dp"
+                android:textSize="@dimen/fecha_nacimiento"/>
+
+        </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal">
+                <DatePicker
+                    android:id="@+id/datePicker"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:clickable="true"
+                    android:datePickerMode = "spinner"
+                    android:calendarViewShown = "false"/>
+
+            </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_gravity="center_horizontal"
+        android:paddingBottom="2dp"
+        android:paddingTop="2dp"
+        android:background="@drawable/border">
+
+        <Button
+            android:id="@+id/btnCancel"
+            android:layout_width="160dp"
+            android:layout_height="wrap_content"
+            android:text="@string/botoncancel"
+            android:layout_below="@id/datePicker"
+            android:textColor="@color/colorTexto"
+            android:textStyle="bold"
+            android:background="@color/colorCancel"
+            android:textAllCaps="false"/>
+
+        <Button
+            android:id="@+id/btnOk"
+            android:layout_width="160dp"
+            android:layout_height="wrap_content"
+            android:text="@string/botonok"
+            android:background="@color/colorAccent"
+            android:textColor="@color/colorTexto"
+            android:textStyle="bold"
+            android:textAllCaps="false"/>
+
+    </LinearLayout>
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+
+
+    <EditText
+        android:id="@+id/etTelefonoContacto"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/telefonocontacto"
+        android:textStyle="bold"
+        android:textSize="@dimen/telefono"/>
+
+    <EditText
+        android:id="@+id/etEmailContacto"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/emailcontacto"
+        android:textStyle="bold"
+        android:textSize="@dimen/email"/>
+
+    <TextView
+        android:id="@+id/tvDescripcionContacto"
+        android:textSize="@dimen/texto_descripcion"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textStyle="bold"
+        android:text="@string/descripcioncontacto"/>
+
+    <EditText
+        android:id="@+id/etDescripcionContacto"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:textStyle="bold"
+        android:textSize="@dimen/texto_descripcion"/>
+
+    <Button
+        android:id="@+id/btnSiguiente"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/botonsiguiente"
+        android:textStyle="bold"
+        android:textSize="@dimen/boton_siguiente"
+        android:background="@color/colorAccent"
+        android:textColor="@color/colorTexto"
+        android:textAllCaps="false"/>
+
+</LinearLayout>

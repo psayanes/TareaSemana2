@@ -1,0 +1,20 @@
+<resources>
+    <string name="app_name">MisContactos</string>
+    <string name="nombre">Pablo Sayanes</string>
+    <string name="telefono">55557777</string>
+    <string name="email">psayanes@gmail.com</string>
+    <string name="pnombre">nombre</string>
+    <string name="ptelefono">telefono</string>
+    <string name="pemail">email</string>
+    <string name="nombrecompleto">Nombre completo</string>
+    <string name="telefonocontacto">Teléfono</string>
+    <string name="emailcontacto">Email</string>
+    <string name="descripcioncontacto">Descripción Contacto</string>
+    <string name="botonsiguiente">Siguiente</string>
+    <string name="fechanacimiento">Fecha de Nacimiento</string>
+    <string name="botoncancel">Cancel</string>
+    <string name="botonok">Ok</string>
+    <string name="setDate">Set Date</string>
+    <string name="tituloconfirmar">Confirmar Datos</string>
+    <string name="botoneditar">Editar Datos</string>
+</resources>
